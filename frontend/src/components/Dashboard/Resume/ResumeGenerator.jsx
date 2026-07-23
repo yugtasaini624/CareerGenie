@@ -27,7 +27,7 @@ const ResumeGenerator = () => {
 
 
             const response = await fetch(
-                "http://localhost:5000/api/resume/generate",
+                "https://career-genie-backend-gf7z.onrender.com/api/resume/generate",
                 {
                     method:"POST",
 
