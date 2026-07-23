@@ -43,7 +43,7 @@ export default function SkillAssessment() {
 
             const response = await axios.post(
 
-                "http://127.0.0.1:5000/api/quiz/generate",
+                "https://career-genie-backend-gf7z.onrender.com/api/quiz/generate",
 
                 {
                     topic: data.skills.join(", "),
