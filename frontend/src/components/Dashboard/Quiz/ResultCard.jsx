@@ -66,7 +66,7 @@ export default function ResultCard({
 
       const response = await axios.post(
 
-        "http://127.0.0.1:5000/api/quiz/submit",
+        "https://career-genie-backend-gf7z.onrender.com/api/quiz/submit",
 
         {
 
