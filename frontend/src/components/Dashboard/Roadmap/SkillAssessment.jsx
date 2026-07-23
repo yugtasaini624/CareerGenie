@@ -141,7 +141,7 @@ function SkillAssessment() {
 
             const response = await fetch(
 
-                "http://localhost:5000/api/roadmap/generate",
+                "https://career-genie-backend-gf7z.onrender.com/api/roadmap/generate",
 
                 {
 
