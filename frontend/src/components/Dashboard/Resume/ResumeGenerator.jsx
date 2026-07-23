@@ -11,8 +11,6 @@ const ResumeGenerator = () => {
 
     const [loading, setLoading] = useState(false);
 
-    const [source, setSource] = useState("");
-
 
 
     const generateBullets = async () => {
