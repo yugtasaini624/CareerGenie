@@ -63,7 +63,7 @@ export default function CareerSummary() {
 
             const response = await axios.get(
 
-                "http://127.0.0.1:5000/api/dashboard/summary",
+                "https://career-genie-backend-gf7z.onrender.com/api/dashboard/summary",
 
                 {
 
