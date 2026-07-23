@@ -37,7 +37,7 @@ function ResumeAnalyzer() {
         formData.append("resume", file);
 
         const response = await fetch(
-            "http://localhost:5000/api/resume/analyze",
+            "https://career-genie-backend-gf7z.onrender.com/api/resume/analyze",
             {
                 method: "POST",
                 headers: {
