@@ -58,7 +58,7 @@ export default function InterviewSetup() {
 
             const response = await fetch(
 
-                "http://localhost:5000/api/interview/start",
+                "https://career-genie-backend-gf7z.onrender.com/api/interview/start",
 
                 {
 
