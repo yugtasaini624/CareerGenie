@@ -1,0 +1,128 @@
+.how-section{
+
+    padding:110px 8%;
+    background:#08111f;
+
+}
+
+.how-heading{
+
+    text-align:center;
+    margin-bottom:70px;
+
+}
+
+.how-heading span{
+
+    color:#00d4ff;
+    font-weight:700;
+    letter-spacing:2px;
+
+}
+
+.how-heading h2{
+
+    color:white;
+    font-size:48px;
+    margin:18px 0;
+
+}
+
+.how-heading p{
+
+    color:#9fb3c8;
+    font-size:18px;
+
+}
+
+.timeline{
+
+    max-width:900px;
+    margin:auto;
+
+}
+
+.timeline-item{
+
+    display:flex;
+    align-items:flex-start;
+    gap:25px;
+    margin-bottom:35px;
+
+}
+
+.step-circle{
+
+    width:70px;
+    height:70px;
+
+    border-radius:50%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:linear-gradient(135deg,#00d4ff,#2e87cc);
+
+    color:white;
+
+    font-weight:700;
+    font-size:22px;
+
+    flex-shrink:0;
+
+    box-shadow:0 0 25px rgba(0,212,255,.35);
+
+}
+
+.step-card{
+
+    flex:1;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:blur(18px);
+
+    padding:28px;
+
+    border-radius:22px;
+
+}
+
+.step-card h3{
+
+    color:white;
+
+    margin-bottom:15px;
+
+    font-size:24px;
+
+}
+
+.step-card p{
+
+    color:#b8c6d8;
+
+    line-height:1.8;
+
+}
+
+@media(max-width:768px){
+
+.timeline-item{
+
+flex-direction:column;
+align-items:center;
+text-align:center;
+
+}
+
+.how-heading h2{
+
+font-size:36px;
+
+}
+
+}

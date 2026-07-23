@@ -1,0 +1,42 @@
+@import "./styles/global.css";
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+
+/* App Root */
+
+html,
+body,
+#root{
+    width:100%;
+    min-height:100vh;
+}
+
+/* Images */
+
+img{
+
+    display:block;
+
+    max-width:100%;
+}
+
+/* Lists */
+
+ul,
+ol{
+
+    list-style:none;
+}
+
+.video-auth-page{
+    position:fixed;
+    inset:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}

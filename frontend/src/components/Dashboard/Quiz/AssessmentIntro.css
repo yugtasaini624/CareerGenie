@@ -1,0 +1,348 @@
+/* =========================================
+   AI ASSESSMENT INTRO CONTAINER
+========================================= */
+
+.ai-assessment-intro{
+
+    max-width:950px;
+
+    margin:40px auto;
+
+    padding:45px;
+
+    border-radius:28px;
+
+    background:rgba(18,32,51,.92);
+
+    backdrop-filter:blur(22px);
+
+    border:1px solid rgba(0,180,216,.12);
+
+    box-shadow:
+    0 20px 60px rgba(0,0,0,.35),
+    0 0 40px rgba(0,180,216,.08);
+
+}
+
+
+
+/* =========================================
+   TITLE
+========================================= */
+
+.ai-assessment-intro h1{
+
+    color:white;
+
+    font-size:38px;
+
+    font-weight:700;
+
+    text-align:center;
+
+    margin-bottom:14px;
+
+}
+
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.ai-assessment-intro>p{
+
+    text-align:center;
+
+    color:#b8c7d8;
+
+    font-size:16px;
+
+    line-height:1.8;
+
+    max-width:620px;
+
+    margin:0 auto 45px;
+
+}
+
+
+
+/* =========================================
+   SECTION
+========================================= */
+
+.ai-assessment-section{
+
+    margin-bottom:40px;
+
+}
+
+
+
+.ai-assessment-section h3{
+
+    color:white;
+
+    font-size:22px;
+
+    margin-bottom:22px;
+
+}
+
+
+
+/* =========================================
+   SKILLS GRID
+========================================= */
+
+.ai-skills-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
+
+    gap:16px;
+
+}
+
+
+
+/* =========================================
+   SKILL CHIP
+========================================= */
+
+.ai-skill-chip{
+
+    padding:14px;
+
+    border-radius:14px;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    color:#d8e5f3;
+
+    font-size:15px;
+
+    font-weight:500;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    text-align:center;
+
+}
+
+
+
+.ai-skill-chip:hover{
+
+    border-color:#00b4d8;
+
+    background:rgba(0,180,216,.08);
+
+    transform:translateY(-2px);
+
+}
+
+
+
+.ai-skill-chip.active{
+
+    background:linear-gradient(
+        135deg,
+        #0096c7,
+        #00b4d8
+    );
+
+    color:white;
+
+    font-weight:600;
+
+    border:1px solid #00b4d8;
+
+    box-shadow:
+    0 0 0 3px rgba(0,180,216,.12);
+
+}
+
+
+
+/* =========================================
+   DIFFICULTY
+========================================= */
+
+.ai-difficulty-grid{
+
+    display:flex;
+
+    gap:18px;
+
+    flex-wrap:wrap;
+
+}
+
+
+
+.ai-difficulty-btn{
+
+    padding:14px 28px;
+
+    border-radius:30px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    background:rgba(255,255,255,.05);
+
+    color:#d8e5f3;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+
+
+.ai-difficulty-btn:hover{
+
+    border-color:#00b4d8;
+
+    background:rgba(0,180,216,.08);
+
+}
+
+
+
+.ai-difficulty-btn.active{
+
+    background:linear-gradient(
+        135deg,
+        #0096c7,
+        #00b4d8
+    );
+
+    color:white;
+
+    border:none;
+
+    box-shadow:
+    0 10px 25px rgba(0,180,216,.2);
+
+}
+
+
+
+/* =========================================
+   GENERATE BUTTON
+========================================= */
+
+.ai-generate-btn{
+
+    width:100%;
+
+    padding:17px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:linear-gradient(
+        135deg,
+        #0096c7,
+        #00b4d8
+    );
+
+    color:white;
+
+    font-size:17px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+
+
+.ai-generate-btn:hover:not(:disabled){
+
+    transform:translateY(-3px);
+
+    box-shadow:
+    0 15px 35px rgba(0,180,216,.25);
+
+}
+
+
+
+.ai-generate-btn:disabled{
+
+    opacity:.45;
+
+    cursor:not-allowed;
+
+}
+
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media(max-width:768px){
+
+.ai-assessment-intro{
+
+    padding:28px;
+
+    margin:20px;
+
+}
+
+.ai-assessment-intro h1{
+
+    font-size:30px;
+
+}
+
+.ai-skills-grid{
+
+    grid-template-columns:1fr 1fr;
+
+}
+
+.ai-difficulty-grid{
+
+    flex-direction:column;
+
+}
+
+.ai-difficulty-btn{
+
+    width:100%;
+
+}
+
+}
+
+
+
+@media(max-width:500px){
+
+.ai-skills-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+}

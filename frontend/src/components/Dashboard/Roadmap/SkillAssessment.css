@@ -1,0 +1,375 @@
+.assessment-page {
+
+    min-height:100vh;
+    width:100%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:
+    radial-gradient(circle at top right,#00b4d822,transparent 35%),
+    radial-gradient(circle at bottom left,#2ecc7122,transparent 35%),
+    #060b14;
+
+    padding:40px;
+
+}
+
+
+/* Main Glass Cards */
+
+.question-card,
+.result-card {
+
+    width:70%;
+    max-width:900px;
+
+    padding:45px;
+
+    background:rgba(15,23,42,0.75);
+
+    border:1px solid rgba(0,180,216,0.25);
+
+    border-radius:28px;
+
+    backdrop-filter:blur(18px);
+
+    box-shadow:
+    0 0 50px rgba(0,180,216,0.15);
+
+    color:white;
+
+}
+
+
+
+/* Header */
+
+.assessment-header {
+
+    margin-bottom:35px;
+
+}
+
+
+.assessment-header span {
+
+    color:#00d4ff;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    letter-spacing:0.5px;
+
+}
+
+
+
+/* Progress Bar */
+
+
+.progress-bar {
+
+    width:100%;
+
+    height:9px;
+
+    background:rgba(255,255,255,0.12);
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    margin-top:15px;
+
+}
+
+
+
+.progress-bar div {
+
+    height:100%;
+
+    background:linear-gradient(
+        90deg,
+        #00b4d8,
+        #2e8fcc
+    );
+
+    border-radius:20px;
+
+    transition:width 0.5s ease;
+
+}
+
+
+
+/* Question */
+
+
+.question-card h2 {
+
+    font-size:29px;
+
+    line-height:1.4;
+
+    margin:30px 0;
+
+    color:white;
+
+}
+
+
+
+/* Options */
+
+
+.options {
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:16px;
+
+}
+
+
+
+.options button {
+
+    padding:17px 22px;
+
+    border-radius:16px;
+
+    border:1px solid rgba(255,255,255,0.15);
+
+    background:rgba(255,255,255,0.06);
+
+    color:white;
+
+    font-size:16px;
+
+    text-align:left;
+
+    cursor:pointer;
+
+    transition:all 0.3s ease;
+
+}
+
+
+
+.options button:hover {
+
+    border-color:#00d4ff;
+
+    background:rgba(0,180,216,0.15);
+
+    transform:translateX(8px);
+
+}
+
+
+
+/* Selected Option */
+
+
+.selected-option {
+
+    background:#00b4d8 !important;
+
+    color:#061018 !important;
+
+    border-color:#00b4d8 !important;
+
+    box-shadow:
+    0 0 20px rgba(0,180,216,0.4);
+
+}
+
+
+
+/* Next Button */
+
+
+.next-btn {
+
+    width:100%;
+
+    margin-top:35px;
+
+    padding:16px;
+
+    border-radius:35px;
+
+    border:none;
+
+    background:#00b4d8;
+
+    color:#061018;
+
+    font-size:17px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:0.3s ease;
+
+}
+
+
+
+.next-btn:hover {
+
+    transform:translateY(-4px);
+
+    box-shadow:
+    0 0 30px rgba(0,180,216,0.6);
+
+}
+
+
+
+.next-btn:disabled {
+
+    opacity:0.45;
+
+    cursor:not-allowed;
+
+    transform:none;
+
+    box-shadow:none;
+
+}
+
+
+
+/* Result Section */
+
+
+.result-card {
+
+    text-align:center;
+
+}
+
+
+
+.result-card h1 {
+
+    font-size:36px;
+
+    margin-bottom:25px;
+
+    color:white;
+
+}
+
+
+
+.analysis-box {
+
+    margin-top:25px;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    background:rgba(255,255,255,0.06);
+
+    border:1px solid rgba(255,255,255,0.12);
+
+    text-align:left;
+
+}
+
+
+
+.analysis-box h3 {
+
+    color:#00d4ff;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.analysis-box p {
+
+    padding:10px 0;
+
+    border-bottom:1px solid rgba(255,255,255,0.08);
+
+    color:#d8f3dc;
+
+}
+
+
+
+.result-card p {
+
+    margin-top:25px;
+
+    color:rgba(255,255,255,0.75);
+
+    line-height:1.7;
+
+}
+
+
+
+/* Responsive */
+
+
+@media(max-width:900px){
+
+    .question-card,
+    .result-card{
+
+        width:85%;
+
+    }
+
+}
+
+
+
+@media(max-width:700px){
+
+
+    .assessment-page{
+
+        padding:20px;
+
+    }
+
+
+    .question-card,
+    .result-card{
+
+        width:100%;
+
+        padding:30px 22px;
+
+    }
+
+
+    .question-card h2{
+
+        font-size:23px;
+
+    }
+
+
+    .result-card h1{
+
+        font-size:28px;
+
+    }
+
+}

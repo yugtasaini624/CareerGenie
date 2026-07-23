@@ -1,0 +1,19 @@
+:root {
+  /* Video Custom Colors Theme */
+  --bg-dark-master: #060b14;        /* Dark background theme outer edge */
+  --bg-dark-center: #102a43;        /* Dark blue radial center core glow */
+  --card-glass-bg: rgba(10, 25, 47, 0.75); /* Dark transparent form wrapper background */
+  --neon-cyan: #00b4d8;             /* Dominant glowing text & button color */
+  --neon-cyan-hover: #0077b6;       /* Hover button background shadow */
+  --border-cyan: rgba(0, 180, 216, 0.3);  /* Outer neon frame boundary layout color */
+  
+  /* Text Labels Styling Specs */
+  --text-pure-white: #ffffff;
+  --text-muted-gray: rgba(255, 255, 255, 0.6);
+  --border-muted: rgba(255, 255, 255, 0.2);
+
+  /* Dimensions Rules Matching Video Scale */
+  --container-width: 760px;
+  --container-height: 460px;
+  --border-radius-main: 12px;
+}

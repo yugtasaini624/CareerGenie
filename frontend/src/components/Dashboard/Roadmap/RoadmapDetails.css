@@ -1,0 +1,478 @@
+/* ===================================================
+   ROADMAP DETAILS PAGE
+=================================================== */
+
+.roadmap-details-page{
+    min-height:100vh;
+    width:100%;
+    padding:50px;
+    box-sizing:border-box;
+    color:#ffffff;
+    background:
+        radial-gradient(circle at top,#020922 0%,#0b1120 45%,#020617 100%);
+    overflow-x:hidden;
+}
+
+/* ===================================================
+   BACK BUTTON
+=================================================== */
+
+.roadmap-details-back{
+
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+
+    padding:12px 22px;
+
+    border:none;
+    border-radius:30px;
+
+    cursor:pointer;
+
+    color:#ffffff;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.35s;
+
+}
+
+.roadmap-details-back:hover{
+
+    background:#2563eb;
+
+    box-shadow:
+    0 0 25px rgba(37,99,235,.4);
+
+}
+
+/* ===================================================
+   HEADER
+=================================================== */
+
+.roadmap-details-header{
+
+    max-width:900px;
+
+    margin:60px auto;
+
+    text-align:center;
+
+}
+
+.roadmap-details-header h1{
+
+    font-size:52px;
+
+    font-weight:800;
+
+    margin-bottom:15px;
+
+    background:
+    linear-gradient(
+        90deg,
+        #22d3ee,
+        #3b82f6,
+        #8b5cf6
+    );
+
+    -webkit-background-clip:text;
+
+    -webkit-text-fill-color:transparent;
+
+}
+
+.roadmap-details-header p{
+
+    color:#cbd5e1;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    margin-bottom:35px;
+
+}
+
+/* ===================================================
+   WEEK PROGRESS
+=================================================== */
+
+.roadmap-details-progress{
+
+    width:100%;
+
+    height:14px;
+
+    background:#1e293b;
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+}
+
+.roadmap-details-progress div{
+
+    height:100%;
+
+    border-radius:30px;
+
+    background:
+    linear-gradient(
+        90deg,
+        #22d3ee,
+        #2563eb,
+        #8b5cf6
+    );
+
+}
+
+.roadmap-details-header span{
+
+    display:block;
+
+    margin-top:15px;
+
+    font-size:18px;
+
+    color:#38bdf8;
+
+    font-weight:700;
+
+}
+
+/* ===================================================
+   MINI PROJECT
+=================================================== */
+
+.roadmap-details-project{
+
+    max-width:900px;
+
+    margin:0 auto 55px;
+
+    display:flex;
+
+    gap:25px;
+
+    align-items:flex-start;
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:28px;
+
+    padding:35px;
+
+    box-shadow:
+
+    0 15px 40px rgba(0,0,0,.35);
+
+}
+
+.roadmap-details-project svg{
+
+    color:#22d3ee;
+
+    flex-shrink:0;
+
+}
+
+.roadmap-details-project-content{
+
+    flex:1;
+
+}
+
+.roadmap-details-project-content h2{
+
+    margin-bottom:15px;
+
+    font-size:28px;
+
+}
+
+.roadmap-details-project-content p{
+
+    color:#cbd5e1;
+
+    line-height:1.7;
+
+}
+
+/* ===================================================
+   PROJECT BUTTON
+=================================================== */
+
+.roadmap-details-project-btn{
+
+    margin-top:25px;
+
+    border:none;
+
+    cursor:pointer;
+
+    padding:13px 28px;
+
+    border-radius:30px;
+
+    font-weight:700;
+
+    font-size:15px;
+
+    color:#fff;
+
+    background:
+
+    linear-gradient(
+        135deg,
+        #2563eb,
+        #8b5cf6
+    );
+
+    transition:.35s;
+
+}
+
+.roadmap-details-project-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:
+
+    0 0 28px rgba(139,92,246,.45);
+
+}
+
+.roadmap-details-project-btn.completed{
+
+    background:
+
+    linear-gradient(
+        135deg,
+        #10b981,
+        #059669
+    );
+
+}
+
+/* ===================================================
+   TITLE
+=================================================== */
+
+.roadmap-details-title{
+
+    max-width:900px;
+
+    margin:0 auto 25px;
+
+    font-size:30px;
+
+}
+
+/* ===================================================
+   TASK LIST
+=================================================== */
+
+.roadmap-details-list{
+
+    max-width:900px;
+
+    margin:auto;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:22px;
+
+}
+
+/* ===================================================
+   TASK CARD
+=================================================== */
+
+.roadmap-details-task{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:22px;
+
+    padding:25px;
+
+    border-radius:25px;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:blur(18px);
+
+    transition:.35s;
+
+}
+
+.roadmap-details-task:hover{
+
+    transform:translateY(-5px);
+
+    border-color:#22d3ee;
+
+    box-shadow:
+
+    0 18px 35px rgba(34,211,238,.15);
+
+}
+
+/* ===================================================
+   COMPLETED TASK
+=================================================== */
+
+.roadmap-details-task.completed{
+
+    opacity:.75;
+
+    border-color:#10b981;
+
+}
+
+.roadmap-details-task.completed h3{
+
+    text-decoration:line-through;
+
+}
+
+/* ===================================================
+   CHECK BUTTON
+=================================================== */
+
+.roadmap-details-check{
+
+    border:none;
+
+    background:none;
+
+    cursor:pointer;
+
+    color:#22d3ee;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+}
+
+.roadmap-details-check svg{
+
+    width:30px;
+
+    height:30px;
+
+}
+
+/* ===================================================
+   TASK INFO
+=================================================== */
+
+.roadmap-details-task-info{
+
+    flex:1;
+
+}
+
+.roadmap-details-task-info h3{
+
+    font-size:22px;
+
+    margin-bottom:10px;
+
+}
+
+.roadmap-details-task-info span{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    color:#94a3b8;
+
+    font-size:15px;
+
+}
+
+/* ===================================================
+   RESPONSIVE
+=================================================== */
+
+@media(max-width:900px){
+
+    .roadmap-details-page{
+
+        padding:30px;
+
+    }
+
+    .roadmap-details-project{
+
+        flex-direction:column;
+
+    }
+
+}
+
+@media(max-width:600px){
+
+    .roadmap-details-page{
+
+        padding:20px;
+
+    }
+
+    .roadmap-details-header h1{
+
+        font-size:36px;
+
+    }
+
+    .roadmap-details-task{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+    }
+
+    .roadmap-details-project{
+
+        padding:25px;
+
+    }
+
+    .roadmap-details-project-content h2{
+
+        font-size:24px;
+
+    }
+
+    .roadmap-details-title{
+
+        font-size:24px;
+
+    }
+
+}

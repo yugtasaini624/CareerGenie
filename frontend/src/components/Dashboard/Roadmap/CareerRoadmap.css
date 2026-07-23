@@ -1,0 +1,590 @@
+/* ===========================
+   CAREER ROADMAP PAGE
+=========================== */
+
+.career-roadmap-page{
+    min-height:100vh;
+    width:100%;
+    padding:50px;
+    background:
+        radial-gradient(circle at top,#010617 0%,#0b1120 45%,#030712 100%);
+    color:#fff;
+    box-sizing:border-box;
+    overflow-x:hidden;
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+.career-roadmap-header{
+    max-width:900px;
+    margin:0 auto 60px;
+    text-align:center;
+}
+
+.career-roadmap-header h1{
+
+    font-size:52px;
+    font-weight:800;
+
+    background:linear-gradient(
+        90deg,
+        #22d3ee,
+        #3b82f6,
+        #8b5cf6
+    );
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+
+    margin-bottom:18px;
+
+}
+
+.career-roadmap-header p{
+
+    color:#94a3b8;
+    font-size:18px;
+    line-height:1.6;
+
+}
+
+/* ===========================
+   OVERALL PROGRESS
+=========================== */
+
+.career-roadmap-progress-card{
+
+    margin:45px auto 0;
+
+    max-width:600px;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:blur(20px);
+
+    border-radius:30px;
+
+    padding:30px;
+
+    box-shadow:
+    0 20px 45px rgba(0,0,0,.35);
+
+}
+
+.career-roadmap-progress-card h3{
+
+    margin-bottom:18px;
+
+    font-size:22px;
+
+}
+
+.career-roadmap-progress{
+
+    width:100%;
+    height:14px;
+
+    background:#1e293b;
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+    margin-bottom:18px;
+
+}
+
+.career-roadmap-progress div{
+
+    height:100%;
+
+    border-radius:30px;
+
+    background:
+    linear-gradient(
+        90deg,
+        #22d3ee,
+        #2563eb,
+        #8b5cf6
+    );
+
+}
+
+.career-roadmap-progress-card span{
+
+    display:block;
+
+    color:#cbd5e1;
+
+    margin-bottom:8px;
+
+}
+
+.career-roadmap-progress-card strong{
+
+    font-size:26px;
+
+    color:#22d3ee;
+
+}
+
+/* ===========================
+   COMPLETION CARD
+=========================== */
+
+.career-roadmap-complete{
+
+    max-width:700px;
+
+    margin:0 auto 60px;
+
+    background:rgba(255,255,255,.05);
+
+    border:2px solid rgba(34,211,238,.3);
+
+    backdrop-filter:blur(18px);
+
+    border-radius:35px;
+
+    padding:45px;
+
+    text-align:center;
+
+    box-shadow:
+
+    0 0 40px rgba(34,211,238,.2);
+
+}
+
+.career-roadmap-complete svg{
+
+    color:#facc15;
+
+}
+
+.career-roadmap-complete h2{
+
+    margin-top:20px;
+
+    font-size:38px;
+
+}
+
+.career-roadmap-complete p{
+
+    margin-top:15px;
+
+    color:#cbd5e1;
+
+    font-size:18px;
+
+}
+
+.career-roadmap-complete button{
+
+    margin-top:30px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:10px;
+
+    margin-left:auto;
+    margin-right:auto;
+
+    border:none;
+
+    cursor:pointer;
+
+    padding:15px 30px;
+
+    border-radius:30px;
+
+    background:
+
+    linear-gradient(
+        135deg,
+        #22d3ee,
+        #8b5cf6
+    );
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:700;
+
+    transition:.35s;
+
+}
+
+.career-roadmap-complete button:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:
+
+    0 0 35px rgba(34,211,238,.45);
+
+}
+
+/* ===========================
+   TIMELINE
+=========================== */
+
+.career-roadmap-timeline{
+
+    max-width:1000px;
+
+    margin:auto;
+
+    position:relative;
+
+}
+
+.career-roadmap-timeline::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:44px;
+
+    top:0;
+
+    width:4px;
+
+    height:100%;
+
+    background:
+
+    linear-gradient(
+        #22d3ee,
+        #8b5cf6
+    );
+
+    opacity:.35;
+
+}
+
+/* ===========================
+   CARD
+=========================== */
+
+.career-roadmap-card{
+
+    display:flex;
+
+    gap:30px;
+
+    margin-bottom:45px;
+
+    cursor:pointer;
+
+}
+
+.career-roadmap-content{
+
+    flex:1;
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(20px);
+
+    border-radius:30px;
+
+    padding:30px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.35s;
+
+}
+
+.career-roadmap-content:hover{
+
+    box-shadow:
+
+    0 20px 40px rgba(34,211,238,.15);
+
+    border-color:#22d3ee;
+
+}
+
+/* ===========================
+   WEEK CIRCLE
+=========================== */
+
+.career-roadmap-week-circle{
+
+    width:90px;
+
+    height:90px;
+
+    min-width:90px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:28px;
+
+    font-weight:800;
+
+    color:#fff;
+
+    background:
+
+    linear-gradient(
+        135deg,
+        #22d3ee,
+        #2563eb,
+        #8b5cf6
+    );
+
+    box-shadow:
+
+    0 0 30px rgba(34,211,238,.35);
+
+    z-index:2;
+
+}
+
+/* ===========================
+   CONTENT
+=========================== */
+
+.career-roadmap-content h2{
+
+    font-size:28px;
+
+    margin-bottom:15px;
+
+}
+
+.career-roadmap-content p{
+
+    color:#cbd5e1;
+
+    line-height:1.8;
+
+}
+
+/* ===========================
+   WEEK PROGRESS
+=========================== */
+
+.career-roadmap-week-progress{
+
+    width:100%;
+
+    height:10px;
+
+    margin-top:25px;
+
+    margin-bottom:10px;
+
+    background:#1e293b;
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+}
+
+.career-roadmap-week-progress div{
+
+    height:100%;
+
+    border-radius:30px;
+
+    background:
+
+    linear-gradient(
+        90deg,
+        #22d3ee,
+        #8b5cf6
+    );
+
+}
+
+.career-roadmap-content small{
+
+    color:#38bdf8;
+
+    font-size:14px;
+
+}
+
+/* ===========================
+   PROJECT
+=========================== */
+
+.career-roadmap-project{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    margin-top:25px;
+
+    padding:15px;
+
+    border-radius:18px;
+
+    background:rgba(34,211,238,.08);
+
+    color:#67e8f9;
+
+}
+
+.career-roadmap-project svg{
+
+    color:#22d3ee;
+
+}
+
+/* ===========================
+   TASK COUNT
+=========================== */
+
+.career-roadmap-task-count{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    margin-top:20px;
+
+    color:#f8fafc;
+
+    font-weight:600;
+
+}
+
+.career-roadmap-task-count svg{
+
+    color:#22d3ee;
+
+}
+
+/* ===========================
+   BUTTON
+=========================== */
+
+.career-roadmap-content button{
+
+    margin-top:28px;
+
+    border:none;
+
+    padding:14px 25px;
+
+    border-radius:30px;
+
+    cursor:pointer;
+
+    background:
+
+    linear-gradient(
+        135deg,
+        #2563eb,
+        #8b5cf6
+    );
+
+    color:white;
+
+    font-size:15px;
+
+    font-weight:700;
+
+    transition:.3s;
+
+}
+
+.career-roadmap-content button:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:
+
+    0 0 30px rgba(139,92,246,.35);
+
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:900px){
+
+    .career-roadmap-page{
+
+        padding:30px;
+
+    }
+
+    .career-roadmap-card{
+
+        flex-direction:column;
+
+        align-items:center;
+
+    }
+
+    .career-roadmap-timeline::before{
+
+        display:none;
+
+    }
+
+}
+
+@media(max-width:600px){
+
+    .career-roadmap-header h1{
+
+        font-size:36px;
+
+    }
+
+    .career-roadmap-content{
+
+        padding:22px;
+
+    }
+
+    .career-roadmap-week-circle{
+
+        width:75px;
+
+        height:75px;
+
+        min-width:75px;
+
+        font-size:22px;
+
+    }
+
+    .career-roadmap-complete{
+
+        padding:28px;
+
+    }
+
+}

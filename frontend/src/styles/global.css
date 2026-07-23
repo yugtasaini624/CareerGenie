@@ -1,0 +1,128 @@
+@import "./variables.css";
+
+/* ===========================
+   RESET
+=========================== */
+
+*,
+*::before,
+*::after{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* ===========================
+   HTML & BODY
+=========================== */
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    min-height:100vh;
+
+    font-family:"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+
+    background:#060B14;
+
+    color:#ffffff;
+
+    overflow-x:hidden;
+    overflow-y:auto;
+
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+}
+
+/* ===========================
+   ROOT
+=========================== */
+
+#root{
+
+    width:100%;
+    min-height:100vh;
+}
+
+/* ===========================
+   LINKS
+=========================== */
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+}
+
+/* ===========================
+   BUTTONS
+=========================== */
+
+button{
+
+    border:none;
+
+    outline:none;
+
+    background:none;
+
+    cursor:pointer;
+
+    font-family:inherit;
+}
+
+/* ===========================
+   INPUTS
+=========================== */
+
+input,
+textarea,
+select{
+
+    outline:none;
+
+    border:none;
+
+    font-family:inherit;
+}
+
+/* Chrome Autofill */
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus{
+
+    -webkit-text-fill-color:#ffffff;
+
+    transition:background-color 9999s ease-in-out 0s;
+}
+
+/* ===========================
+   SCROLLBAR
+=========================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+
+    background:#101827;
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#245B47;
+
+    border-radius:20px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#00D4FF;
+}

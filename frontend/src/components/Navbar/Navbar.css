@@ -1,0 +1,922 @@
+/* =====================================================
+   CAREERGENIE PREMIUM SAAS NAVBAR
+===================================================== */
+
+.career-navbar{
+
+    width:calc(98% - 40px);
+
+    max-width:1500px;
+
+    margin:20px auto;
+
+    height:92px;
+
+    padding:0 30px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    background:rgba(8,16,34,.88);
+
+    backdrop-filter:blur(25px);
+
+    -webkit-backdrop-filter:blur(25px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:26px;
+
+    box-shadow:
+    0 20px 60px rgba(0,0,0,.45),
+    inset 0 1px 0 rgba(255,255,255,.05);
+
+    position:relative;
+
+    transition:.35s;
+
+}
+
+.career-navbar:hover{
+
+    border-color:rgba(59,130,246,.22);
+
+    box-shadow:
+    0 20px 50px rgba(0,0,0,.45),
+    0 0 35px rgba(37,99,235,.10);
+
+}
+
+
+/* =========================
+        LEFT
+========================= */
+
+.career-navbar-left{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+}
+
+
+/* =========================
+       MENU BUTTON
+========================= */
+
+.career-menu-btn{
+
+    width:56px;
+
+    height:56px;
+
+    border:none;
+
+    outline:none;
+
+    cursor:pointer;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:18px;
+
+    color:#fff;
+
+    background:linear-gradient(
+        135deg,
+        #11284f,
+        #0d1d39
+    );
+
+    transition:.28s;
+
+}
+
+.career-menu-btn svg{
+
+    font-size:24px;
+
+}
+
+.career-menu-btn:hover{
+
+    transform:translateY(-3px);
+
+    background:linear-gradient(
+        135deg,
+        #1b3f77,
+        #14345f
+    );
+
+    box-shadow:
+    0 10px 25px rgba(37,99,235,.25);
+
+}
+
+
+/* =========================
+          LOGO
+========================= */
+
+.career-logo-wrapper{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+}
+
+.career-logo{
+
+    margin-top:18px;
+
+    height:170px;
+
+    width:auto;
+
+    object-fit:contain;
+
+    transition:.35s;
+
+    filter:drop-shadow(0 0 10px rgba(37,99,235,.18));
+
+}
+
+.career-logo:hover{
+
+    transform:scale(1.03);
+
+}
+
+
+/* =========================
+         RIGHT
+========================= */
+
+.career-navbar-right{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+}
+
+
+/* =========================
+      ICON BUTTONS
+========================= */
+
+.career-icon-btn{
+
+    width:54px;
+
+    height:54px;
+
+    border:none;
+
+    cursor:pointer;
+
+    border-radius:18px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    color:#d7e6ff;
+
+    background:#132746;
+
+    transition:.3s;
+
+    position:relative;
+
+}
+
+.career-icon-btn svg{
+
+    font-size:22px;
+
+}
+
+.career-icon-btn:hover{
+
+    transform:translateY(-3px);
+
+    background:linear-gradient(
+        135deg,
+        #2152a3,
+        #17428a
+    );
+
+    color:white;
+
+    box-shadow:
+    0 12px 28px rgba(59,130,246,.25);
+
+}
+
+
+/* =========================
+      NOTIFICATION
+========================= */
+
+.career-notification{
+
+    position:relative;
+
+}
+
+.notification-dot{
+
+    position:absolute;
+
+    top:11px;
+
+    right:11px;
+
+    width:10px;
+
+    height:10px;
+
+    border-radius:50%;
+
+    background:#22c55e;
+
+    border:2px solid #132746;
+
+    animation:pulseDot 2s infinite;
+
+}
+
+@keyframes pulseDot{
+
+    0%{
+
+        box-shadow:0 0 0 0 rgba(34,197,94,.7);
+
+    }
+
+    70%{
+
+        box-shadow:0 0 0 8px rgba(34,197,94,0);
+
+    }
+
+    100%{
+
+        box-shadow:0 0 0 0 rgba(34,197,94,0);
+
+    }
+
+}
+
+
+/* =========================
+      DROPDOWN
+========================= */
+
+.career-notification-dropdown{
+
+    position:absolute;
+
+    top:65px;
+
+    right:0;
+
+    width:330px;
+
+    background:#0d172d;
+
+    border-radius:22px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    overflow:hidden;
+
+    box-shadow:
+    0 25px 60px rgba(0,0,0,.45);
+
+    z-index:1000;
+
+}
+
+.dropdown-header{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    padding:18px 20px;
+
+    border-bottom:1px solid rgba(255,255,255,.06);
+
+    background:rgba(255,255,255,.02);
+
+}
+
+.dropdown-header h3{
+
+    margin-top:30px;
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:600;
+
+}
+
+.dropdown-header span{
+
+    background:#2563eb;
+
+    color:white;
+
+    width:28px;
+
+    height:28px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:13px;
+
+    font-weight:700;
+
+}
+
+.dropdown-list{
+
+    padding:8px 0;
+
+}
+
+.notification-item{
+
+    padding:15px 20px;
+
+    color:#cdd8eb;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+    border-bottom:1px solid rgba(255,255,255,.04);
+
+    font-size:14px;
+
+    line-height:1.5;
+
+}
+
+.notification-item:last-child{
+
+    border-bottom:none;
+
+}
+
+.notification-item:hover{
+
+    background:#152a4f;
+
+    color:white;
+
+    padding-left:28px;
+
+}
+
+
+/* =====================================================
+   USER CARD
+===================================================== */
+
+.career-user-card{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    padding:8px 14px;
+
+    border-radius:14px;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    cursor:default;
+
+    transition:none;
+
+}
+
+.career-user-card:hover{
+
+    transform:none;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    box-shadow:none;
+
+}
+
+.career-avatar{
+
+    width:42px;
+
+    height:42px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:linear-gradient(
+        135deg,
+        #0096c7,
+        #00b4d8
+    );
+
+    color:#fff;
+
+    font-size:16px;
+
+    font-weight:700;
+
+    flex-shrink:0;
+
+}
+
+.career-user-details{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.career-user-details h4{
+
+    margin:0;
+
+    font-size:15px;
+
+    color:#ffffff;
+
+    font-weight:600;
+
+}
+
+.career-user-details p{
+
+    margin:2px 0 0;
+
+    font-size:12px;
+
+    color:#8ea7bf;
+
+}
+
+/* =====================================================
+   SCROLLBAR
+===================================================== */
+
+.career-notification-dropdown::-webkit-scrollbar{
+
+    width:6px;
+
+}
+
+.career-notification-dropdown::-webkit-scrollbar-thumb{
+
+    background:#2856a8;
+
+    border-radius:20px;
+
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media(max-width:1100px){
+
+    .career-navbar{
+
+        width:94%;
+
+        height:80px;
+
+        padding:0 22px;
+
+    }
+
+    .career-logo{
+
+        height:170px;
+
+        margin-top:10px;
+
+    }
+
+}
+
+@media(max-width:900px){
+
+    .career-navbar{
+
+        width:95%;
+
+        height:72px;
+
+        padding:0 18px;
+
+    }
+
+    .career-user-details{
+
+        display:none;
+
+    }
+
+    .career-user-arrow{
+
+        display:none;
+
+    }
+
+    .career-navbar-right{
+
+        gap:10px;
+
+    }
+
+    .career-logo{
+
+        height:170px;
+
+        margin-top:8px;
+
+        margin-left:-10px;
+
+    }
+
+}
+
+@media(max-width:700px){
+
+    .career-navbar{
+
+        width:calc(100% - 24px);
+
+        height:68px;
+
+        padding:0 12px;
+
+        border-radius:18px;
+
+    }
+
+    .career-navbar-left{
+
+        gap:10px;
+
+    }
+
+    .career-navbar-right{
+
+        gap:8px;
+
+    }
+
+    .career-menu-btn,
+
+    .career-icon-btn{
+
+        width:42px;
+
+        height:42px;
+
+        border-radius:14px;
+
+    }
+
+    .career-menu-btn svg,
+
+    .career-icon-btn svg{
+
+        font-size:18px;
+
+    }
+
+    .career-avatar{
+
+        width:40px;
+
+        height:40px;
+
+        font-size:15px;
+
+    }
+
+    .career-logo{
+
+        height:170px;
+
+        margin-top:5px;
+
+    }
+
+    .career-notification-dropdown{
+
+        width:300px;
+
+    }
+
+}
+
+@media(max-width:550px){
+
+    .career-navbar{
+
+        width:calc(100% - 20px);
+
+        padding:0 10px;
+
+    }
+
+    .career-navbar-left{
+
+        gap:10px;
+
+    }
+
+    .career-navbar-right{
+
+        gap:6px;
+
+    }
+
+    .career-logo{
+
+        height:170px;
+
+        margin-left:-10px;
+
+    }
+
+    .career-notification-dropdown{
+
+        width:270px;
+
+        right:-10px;
+
+    }
+
+}
+
+@media(max-width:420px){
+
+    .career-navbar{
+
+        width:calc(101% - 16px);
+
+        height:64px;
+
+        border-radius:16px;
+
+        padding:0 8px;
+
+    }
+
+    .career-menu-btn,
+
+    .career-icon-btn{
+
+        width:38px;
+
+        height:38px;
+
+        border-radius:12px;
+
+    }
+
+    .career-menu-btn svg,
+
+    .career-icon-btn svg{
+
+        font-size:16px;
+
+    }
+
+    .career-avatar{
+
+        width:36px;
+
+        height:36px;
+
+        font-size:14px;
+
+    }
+
+    .career-logo{
+
+        height:170px;
+
+        margin-left:-10px;
+
+    }
+
+    .career-notification-dropdown{
+
+        width:250px;
+
+    }
+
+}
+
+/* =====================================================
+   SMOOTH ANIMATIONS
+===================================================== */
+
+.career-menu-btn,
+.career-icon-btn,
+.career-user-card,
+.career-avatar,
+.career-logo{
+
+    will-change:transform;
+
+}
+
+.career-menu-btn:active,
+.career-icon-btn:active{
+
+    transform:scale(.95);
+
+}
+
+.career-avatar:hover{
+
+    transform:rotate(-6deg) scale(1.05);
+
+}
+
+.career-logo{
+
+    filter:
+    drop-shadow(0 0 10px rgba(37,99,235,.18));
+
+}
+
+.career-navbar::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:1px;
+
+    background:linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,.18),
+        transparent
+    );
+
+}
+
+.career-navbar::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    border-radius:26px;
+
+    pointer-events:none;
+
+    background:
+    radial-gradient(
+        circle at top right,
+        rgba(59,130,246,.08),
+        transparent 40%
+    );
+
+}
+
+
+/* =====================================================
+   EXTRA SMALL DEVICES
+===================================================== */
+
+@media(max-width:360px){
+
+    .career-navbar{
+
+        width:calc(100% - 12px);
+
+        height:62px;
+
+        padding:0 6px;
+
+    }
+
+    .career-navbar-left{
+
+        gap:8px;
+
+    }
+
+    .career-navbar-right{
+
+        gap:5px;
+
+    }
+
+    .career-menu-btn,
+    .career-icon-btn{
+
+        width:34px;
+
+        height:34px;
+
+        border-radius:10px;
+
+    }
+
+    .career-menu-btn svg,
+    .career-icon-btn svg{
+
+        font-size:15px;
+
+    }
+
+    .career-avatar{
+
+        width:34px;
+
+        height:34px;
+
+        font-size:13px;
+
+    }
+
+    .career-logo{
+
+        height:170px;
+
+        margin-top:4px;
+
+        margin-left:-8px;
+
+    }
+
+    .career-notification-dropdown{
+
+        width:calc(100vw - 20px);
+
+        right:-4px;
+
+    }
+
+}

@@ -1,0 +1,481 @@
+/* =========================================
+   MAIN PAGE
+========================================= */
+
+.resume-page{
+
+    min-height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:35px;
+
+    box-sizing:border-box;
+
+    width:100%;
+
+    padding:80px 20px 40px;
+
+}
+
+
+
+/* =========================================
+   TOP INPUT CARD
+========================================= */
+
+
+.resume-card{
+
+    width:650px;
+
+    max-width:100%;
+
+    padding:35px;
+
+    border-radius:26px;
+
+    background:linear-gradient(
+        135deg,
+        rgba(18,32,51,.95),
+        rgba(11,23,40,.95)
+    );
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(0,180,216,.12);
+
+    box-shadow:
+    0 20px 50px rgba(0,0,0,.35);
+
+}
+
+
+
+.resume-card h2{
+
+    color:white;
+
+    font-size:30px;
+
+    margin:0 0 10px;
+
+    text-align:center;
+
+}
+
+
+
+.resume-card p{
+
+    color:#b8c7d8;
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+}
+
+
+
+/* =========================================
+   INPUTS
+========================================= */
+
+
+.resume-card input,
+.resume-card textarea{
+
+    width:100%;
+
+    box-sizing:border-box;
+
+    padding:15px 18px;
+
+    margin-bottom:18px;
+
+    border-radius:16px;
+
+    outline:none;
+
+    color:white;
+
+    font-size:15px;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(0,180,216,.12);
+
+}
+
+
+
+.resume-card textarea{
+
+    height:130px;
+
+    resize:none;
+
+}
+
+
+
+/* =========================================
+   BUTTON
+========================================= */
+
+
+.resume-card button{
+
+    width:100%;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:30px;
+
+    cursor:pointer;
+
+    color:white;
+
+    font-weight:700;
+
+    font-size:16px;
+
+    background:linear-gradient(
+        135deg,
+        #0096c7,
+        #00b4d8
+    );
+
+}
+
+
+
+/* =========================================
+   RESPONSE SECTION
+========================================= */
+
+
+.resume-result{
+
+    width:900px;
+
+    max-width:100%;
+
+    padding:35px;
+
+    border-radius:28px;
+
+    background:linear-gradient(
+        135deg,
+        rgba(18,32,51,.95),
+        rgba(11,23,40,.95)
+    );
+
+    border:1px solid rgba(0,180,216,.12);
+
+    box-shadow:
+    0 20px 50px rgba(0,0,0,.35);
+
+}
+
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+
+.result-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:30px;
+
+}
+
+
+
+.result-header h2{
+
+    color:white;
+
+    font-size:26px;
+
+}
+
+
+
+/* =========================================
+   BULLET CARDS
+========================================= */
+
+
+.bullet-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:16px;
+
+}
+
+
+
+.bullet-item{
+
+    display:flex;
+
+    gap:18px;
+
+    align-items:flex-start;
+
+    padding:22px;
+
+    border-radius:20px;
+
+    background:rgba(255,255,255,.04);
+
+}
+
+
+
+.bullet-number{
+
+    min-width:40px;
+
+    height:40px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:linear-gradient(
+        135deg,
+        #0096c7,
+        #00b4d8
+    );
+
+    color:white;
+
+    font-weight:800;
+
+}
+
+
+
+.bullet-item p{
+
+    margin:0;
+
+    color:#d8e5f3;
+
+    line-height:1.7;
+
+    font-size:15px;
+
+}
+
+
+
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+
+@media(max-width:992px){
+
+
+    .resume-page{
+
+        padding:70px 25px 40px;
+
+    }
+
+
+    .resume-card,
+    .resume-result{
+
+        width:100%;
+
+    }
+
+}
+
+
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+
+@media(max-width:768px){
+
+
+    .resume-page{
+
+        padding:60px 15px 30px;
+
+        gap:25px;
+
+    }
+
+
+
+    .resume-card{
+
+        padding:22px;
+
+        border-radius:22px;
+
+    }
+
+
+
+    .resume-result{
+
+        padding:22px;
+
+        border-radius:22px;
+
+    }
+
+
+
+    .resume-card h2{
+
+        font-size:24px;
+
+    }
+
+
+
+    .resume-card p{
+
+        font-size:14px;
+
+    }
+
+
+
+    .result-header{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:12px;
+
+    }
+
+
+
+    .result-header h2{
+
+        font-size:22px;
+
+    }
+
+
+
+    .bullet-item{
+
+        padding:16px;
+
+        gap:12px;
+
+    }
+
+
+
+    .bullet-number{
+
+        min-width:34px;
+
+        height:34px;
+
+        font-size:14px;
+
+    }
+
+
+
+    .bullet-item p{
+
+        font-size:14px;
+
+    }
+
+
+}
+
+
+
+
+
+/* =========================================
+   SMALL PHONES
+========================================= */
+
+
+@media(max-width:480px){
+
+
+    .resume-page{
+
+        padding:50px 10px 25px;
+
+    }
+
+
+
+    .resume-card,
+    .resume-result{
+
+        padding:18px;
+
+        border-radius:18px;
+
+    }
+
+
+
+    .resume-card input,
+    .resume-card textarea{
+
+        font-size:14px;
+
+        padding:13px 14px;
+
+    }
+
+
+
+    .bullet-item{
+
+        flex-direction:column;
+
+    }
+
+
+}

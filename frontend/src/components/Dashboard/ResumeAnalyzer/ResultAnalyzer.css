@@ -1,0 +1,498 @@
+/* ==========================================
+   GLOBAL
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* ==========================================
+   CARD
+========================================== */
+
+.card{
+
+    width:100%;
+    max-width:1000px;
+
+    margin:30px auto;
+
+    background:rgba(14,23,38,.96);
+
+    border-radius:16px;
+
+    display:grid;
+
+    grid-template-columns:360px 1fr;
+
+    border:1px solid rgba(0,180,216,.12);
+
+    backdrop-filter:blur(18px);
+
+    box-shadow:
+        0 25px 60px rgba(0,0,0,.45),
+        0 0 40px rgba(0,180,216,.08);
+
+    overflow:hidden;
+
+    align-items:stretch;
+}
+
+
+/* ==========================================
+   LEFT
+========================================== */
+
+.left{
+
+    padding:36px;
+
+    border-right:1px solid rgba(255,255,255,.06);
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    background:
+    radial-gradient(circle at top,
+    rgba(0,180,216,.08),
+    transparent 70%);
+}
+
+canvas{
+
+    width:100% !important;
+
+    max-width:230px;
+
+    height:auto !important;
+
+    max-height:220px;
+
+}
+
+.stats{
+
+    margin-top:26px;
+
+    text-align:center;
+
+    font-size:13px;
+
+    color:#8ea7bf;
+
+}
+
+.stats strong{
+
+    display:block;
+
+    margin-top:6px;
+
+    font-size:18px;
+
+    color:#ffffff;
+
+    font-weight:600;
+
+}
+
+
+/* ==========================================
+   RIGHT
+========================================== */
+
+.right{
+
+    padding:42px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+}
+
+.title{
+
+    font-size:28px;
+
+    font-weight:600;
+
+    line-height:1.35;
+
+    color:#ffffff;
+
+}
+
+.match-badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin-top:14px;
+
+    padding:7px 16px;
+
+    font-size:14px;
+
+    font-weight:500;
+
+    border-radius:999px;
+
+    background:rgba(0,180,216,.12);
+
+    border:1px solid rgba(0,180,216,.22);
+
+    color:#67abf9;
+
+    width:fit-content;
+
+}
+
+.section{
+
+    margin-top:30px;
+
+}
+
+.section h3{
+
+    font-size:15px;
+
+    font-weight:600;
+
+    margin-bottom:14px;
+
+    color:#6795f9;
+
+}
+
+.skills{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+}
+
+.skill{
+
+    font-size:13px;
+
+    padding:8px 14px;
+
+    border-radius:8px;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    color:#e5e7eb;
+
+    transition:.25s;
+
+}
+
+.skill:hover{
+
+    background:rgba(0,180,216,.12);
+
+    border-color:rgba(0,180,216,.35);
+
+    color:#fff;
+
+}
+
+.skill.missing{
+
+    opacity:.55;
+
+}
+
+.skill.missing:hover{
+
+    opacity:1;
+
+    background:rgba(255,255,255,.08);
+
+    border-color:rgba(255,255,255,.15);
+
+}
+
+
+/* ==========================================
+   BUTTON
+========================================== */
+
+.bottom-action{
+
+    margin-top:auto;
+
+    padding-top:34px;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.upload-btn{
+
+    padding:12px 24px;
+
+    font-size:14px;
+
+    border-radius:10px;
+
+    background:linear-gradient(
+        135deg,
+        #006dc7,
+        #0077d8
+    );
+
+    color:#fff;
+
+    border:none;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.upload-btn:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:
+        0 12px 28px rgba(0,180,216,.28);
+
+}
+
+
+/* ==========================================
+   TABLETS
+========================================== */
+
+@media(max-width:992px){
+
+    .card{
+
+        max-width:92%;
+
+        grid-template-columns:1fr;
+
+    }
+
+    .left{
+
+        border-right:none;
+
+        border-bottom:1px solid rgba(255,255,255,.06);
+
+        padding:32px;
+
+    }
+
+    .right{
+
+        padding:32px;
+
+    }
+
+    .title{
+
+        text-align:center;
+
+        font-size:26px;
+
+    }
+
+    .match-badge{
+
+        margin-inline:auto;
+
+    }
+
+    .section h3{
+
+        text-align:center;
+
+    }
+
+    .skills{
+
+        justify-content:center;
+
+    }
+
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media(max-width:768px){
+
+    .card{
+
+        width:95%;
+
+        margin:20px auto;
+
+        border-radius:14px;
+
+    }
+
+    .left{
+
+        padding:24px;
+
+    }
+
+    canvas{
+
+        max-width:190px;
+
+        max-height:190px;
+
+    }
+
+    .stats{
+
+        font-size:12px;
+
+    }
+
+    .stats strong{
+
+        font-size:16px;
+
+    }
+
+    .right{
+
+        padding:24px 20px;
+
+    }
+
+    .title{
+
+        font-size:22px;
+
+    }
+
+    .match-badge{
+
+        font-size:12px;
+
+        padding:6px 14px;
+
+    }
+
+    .section{
+
+        margin-top:24px;
+
+    }
+
+    .section h3{
+
+        font-size:14px;
+
+    }
+
+    .skill{
+
+        font-size:12px;
+
+        padding:7px 12px;
+
+    }
+
+    .upload-btn{
+
+        width:100%;
+
+        max-width:300px;
+
+        padding:12px;
+
+    }
+
+}
+
+
+/* ==========================================
+   SMALL PHONES
+========================================== */
+
+@media(max-width:480px){
+
+    .card{
+
+        width:100%;
+
+        margin:15px auto;
+
+        border-radius:12px;
+
+    }
+
+    .left{
+
+        padding:20px 16px;
+
+    }
+
+    .right{
+
+        padding:20px 16px;
+
+    }
+
+    canvas{
+
+        max-width:170px;
+
+        max-height:170px;
+
+    }
+
+    .title{
+
+        font-size:20px;
+
+    }
+
+    .skills{
+
+        gap:8px;
+
+    }
+
+    .skill{
+
+        font-size:11px;
+
+        padding:6px 10px;
+
+    }
+
+}
