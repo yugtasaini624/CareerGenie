@@ -43,7 +43,7 @@ export default function RecommendedProject() {
 
             const response = await axios.get(
 
-                "http://127.0.0.1:5000/api/projects/latest",
+                "https://career-genie-backend-gf7z.onrender.com/api/projects/latest",
 
                 {
 
