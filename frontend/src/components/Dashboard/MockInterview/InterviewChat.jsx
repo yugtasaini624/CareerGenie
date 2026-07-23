@@ -197,6 +197,7 @@ export default function InterviewChat() {
         };
 
         loadInterview();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [sessionId, navigate]);
 
 
@@ -286,6 +287,7 @@ export default function InterviewChat() {
     recognition.stop();
 
 };
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
 
