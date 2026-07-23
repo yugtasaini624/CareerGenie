@@ -79,36 +79,6 @@ export default function QuizCard({
 
 
 
-
-  const handlePrevious = () => {
-
-
-    if (currentQuestion === 0)
-
-      return;
-
-
-
-    const previous = currentQuestion - 1;
-
-
-
-    setCurrentQuestion(previous);
-
-
-
-    setSelectedAnswer(
-
-      answers[previous]?.selected || ""
-
-    );
-
-
-  };
-
-
-
-
   const restartQuiz = () => {
 
 
