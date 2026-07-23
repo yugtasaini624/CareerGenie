@@ -62,7 +62,7 @@ export default function Certificate() {
 
             const response = await axios.get(
 
-                `http://127.0.0.1:5000/api/certificate/data/${sessionId}`,
+                `https://career-genie-backend-gf7z.onrender.com/api/certificate/data/${sessionId}`,
 
                 {
 
