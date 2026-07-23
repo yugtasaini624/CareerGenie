@@ -1,4 +1,3 @@
-import DashboardLayout from "../layouts/DashboardLayout";
 import Hero from "../components/dashboardUser/CareerHero/CareerHero";
 import QuickActions from "../components/dashboardUser/quickAction/QuickActions";
 
