@@ -33,7 +33,7 @@ function CareerMotivation(){
 
             const response = await fetch(
 
-                "http://localhost:5000/api/dashboard",
+                "https://career-genie-backend-gf7z.onrender.com/api/dashboard",
 
                 {
 
