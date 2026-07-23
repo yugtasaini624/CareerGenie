@@ -3,7 +3,6 @@ import axios from "axios";
 
 import {
     Sparkles,
-    Code2,
     Database,
     Bot
 } from "lucide-react";
