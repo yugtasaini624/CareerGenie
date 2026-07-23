@@ -22,10 +22,10 @@ function RoadmapDetails() {
 
     const [loading, setLoading] = useState(true);
 
-    useEffect(() => {
-
+       useEffect(() => {
         fetchWeek();
-
+    
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     const fetchWeek = async () => {
