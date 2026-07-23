@@ -44,7 +44,7 @@ export default function ChatBot() {
         try{
 
             const res = await fetch(
-                "http://localhost:5000/api/chat/start",
+                "https://career-genie-backend-gf7z.onrender.com/api/chat/start",
                 {
                     method:"POST",
                     headers:{
@@ -97,7 +97,7 @@ export default function ChatBot() {
         try{
 
             const res = await fetch(
-                "http://localhost:5000/api/chat",
+                "https://career-genie-backend-gf7z.onrender.com/api/chat",
                 {
 
                     method:"POST",
