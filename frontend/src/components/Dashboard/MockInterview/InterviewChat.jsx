@@ -156,7 +156,7 @@ export default function InterviewChat() {
                 const token = localStorage.getItem("token");
 
                 const response = await fetch(
-                    `http://localhost:5000/api/interview/session/${sessionId}`,
+                    `https://career-genie-backend-gf7z.onrender.com/api/interview/session/${sessionId}`,
                     {
                         headers: {
                             Authorization: `Bearer ${token}`
@@ -312,7 +312,7 @@ export default function InterviewChat() {
 
         const response = await fetch(
 
-            "http://localhost:5000/api/interview/chat",
+            "https://career-genie-backend-gf7z.onrender.com/api/interview/chat",
 
             {
 
