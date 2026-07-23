@@ -47,7 +47,7 @@ export default function InterviewReport() {
         const token = localStorage.getItem("token");
 
         const response = await fetch(
-            "http://localhost:5000/api/interview/finish",
+            "https://career-genie-backend-gf7z.onrender.com/api/interview/finish",
             {
                 method: "POST",
                 headers: {
