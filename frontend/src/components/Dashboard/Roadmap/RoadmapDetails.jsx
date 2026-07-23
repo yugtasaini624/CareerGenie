@@ -38,7 +38,7 @@ function RoadmapDetails() {
             const response =
                 await fetch(
 
-                    `http://localhost:5000/api/roadmap/${week}`,
+                    `https://career-genie-backend-gf7z.onrender.com/api/roadmap/${week}`,
 
                     {
 
@@ -89,7 +89,7 @@ function RoadmapDetails() {
 
             await fetch(
 
-                `http://localhost:5000/api/roadmap/task/${id}`,
+                `https://career-genie-backend-gf7z.onrender.com/api/roadmap/task/${id}`,
 
                 {
 
@@ -139,7 +139,7 @@ function RoadmapDetails() {
 
             await fetch(
 
-                `http://localhost:5000/api/roadmap/project/${week}`,
+                `https://career-genie-backend-gf7z.onrender.com/api/roadmap/project/${week}`,
 
                 {
 
