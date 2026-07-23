@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://127.0.0.1:5000/api/auth",
+  baseURL: "https://career-genie-backend-gf7z.onrender.com/api/auth",
 });
 
 export const registerUser = (data) => {
