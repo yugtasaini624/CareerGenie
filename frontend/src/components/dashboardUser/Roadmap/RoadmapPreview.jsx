@@ -51,7 +51,7 @@ export default function RoadmapPreview() {
 
             const response = await axios.get(
 
-                "http://127.0.0.1:5000/api/roadmap/",
+                "https://career-genie-backend-gf7z.onrender.com/api/roadmap/",
 
                 {
 
