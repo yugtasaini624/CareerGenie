@@ -52,7 +52,6 @@ const ResumeGenerator = () => {
 
                 setBullets(data.bullets);
 
-                setSource(data.source);
 
             }
 
