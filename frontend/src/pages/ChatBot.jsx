@@ -69,11 +69,10 @@ export default function ChatBot() {
 
     };
 
-    useEffect(()=>{
-
+    useEffect(() => {
         startChat();
-
-    },[]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []);
 
     const sendMessage = async()=>{
 
