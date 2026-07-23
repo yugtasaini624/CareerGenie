@@ -47,13 +47,13 @@ export default function Footer() {
 
           <h3>Quick Links</h3>
 
-          <a href="#">Home</a>
+          <a href="/">Home</a>
 
-          <a href="#features">Features</a>
+          <a href="/">Features</a>
 
-          <a href="#roadmap">Roadmap</a>
+          <a href="/">Roadmap</a>
 
-          <a href="#contact">Contact</a>
+          <a href="/">Contact</a>
 
         </div>
 
@@ -64,13 +64,13 @@ export default function Footer() {
 
           <h3>Services</h3>
 
-          <a href="#">Skill Assessment</a>
+          <a href="/">Skill Assessment</a>
 
-          <a href="#">Career Roadmap</a>
+          <a href="/">Career Roadmap</a>
 
-          <a href="#">Resume Analysis</a>
+          <a href="/">Resume Analysis</a>
 
-          <a href="#">AI Projects</a>
+          <a href="/">AI Projects</a>
 
         </div>
 
@@ -85,15 +85,15 @@ export default function Footer() {
 
           <div className="social-icons">
 
-            <a href="#">
+            <a href="/">
               <FaGithub />
             </a>
 
-            <a href="#">
+            <a href="/">
               <FaLinkedin />
             </a>
 
-            <a href="#">
+            <a href="/">
               <FaEnvelope />
             </a>
 
