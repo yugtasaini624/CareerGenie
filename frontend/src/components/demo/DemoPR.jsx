@@ -64,7 +64,7 @@ export default function ProjectRecommendation() {
             const response = await axios.post(
 
 
-                "http://127.0.0.1:5000/api/projects/demo",
+                "https://career-genie-backend-gf7z.onrender.com/api/projects/demo",
 
 
                 {
