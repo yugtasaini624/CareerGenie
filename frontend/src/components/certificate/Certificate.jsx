@@ -44,11 +44,8 @@ export default function Certificate() {
 
 
     useEffect(() => {
-
-
         fetchCertificate();
-
-
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
     const fetchCertificate = async () => {
 
