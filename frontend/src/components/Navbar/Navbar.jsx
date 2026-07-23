@@ -1,11 +1,9 @@
-import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 
 import {
   FiMenu,
   FiBell,
-  FiSettings,
-  FiChevronDown
+  FiSettings
 } from "react-icons/fi";
 
 import Genie from "../../assets/images/Genie.png";
@@ -13,8 +11,6 @@ import Genie from "../../assets/images/Genie.png";
 import "./Navbar.css";
 
 export default function Navbar({ toggleSidebar }) {
-
-  const [showNotifications, setShowNotifications] = useState(false);
 
   const user =
   JSON.parse(localStorage.getItem("user")) || {};
@@ -24,12 +20,6 @@ const username =
 
 const firstLetter =
   username.charAt(0).toUpperCase();
-
-  const notifications = [
-    "🚀 Your AI roadmap is ready",
-    "📚 Complete today's learning goal",
-    "🔥 Keep your learning streak alive"
-  ];
 
   return (
 
